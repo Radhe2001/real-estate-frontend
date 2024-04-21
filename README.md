@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Real-Estate Frontend
 
-## Getting Started
+Built using next.js and tailwind css
+To setup this application you need to install all the packages to the repo for that
 
-First, run the development server:
+    npm install
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Make sure that you have already installed node LTS version.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+To run the application you need to run the command
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+    npm run dev
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+make sure that the internet is connected and the backend is running else it won't be able to fetch the data.
 
-## Learn More
+## Login page layout
 
-To learn more about Next.js, take a look at the following resources:
+![enter image description here](https://imgur.com/50xJH9r.png)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Landing Page layout
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+![enter image description here](https://imgur.com/75jlmeE.png)
 
-## Deploy on Vercel
+## Favourite pop up modal
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+![enter image description here](https://imgur.com/3zezWqt.png)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Detail pop up modal
+
+![enter image description here](https://imgur.com/iwjRmyY.png)
+
+## Add item layout
+
+![enter image description here](https://imgur.com/uYfztNL.png)
+
+## Show and delete item layout
+
+![enter image description here](https://imgur.com/eALWqOA.png)
