@@ -46,7 +46,7 @@ export default function Home() {
 					<div className="fixed w-full top-0 z-20">
 						<Navbar handleShow={handleShow} />
 					</div>
-					<div className="relative w-full  z-10 ">
+					<div className="relative w-full  z-10 overflow-x-hidden">
 						<div
 							className={`absolute ${
 								showFavourite ? '' : 'hidden'

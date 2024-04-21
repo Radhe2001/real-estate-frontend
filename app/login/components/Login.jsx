@@ -29,7 +29,10 @@ function Login() {
 	};
 	return (
 		<section className="">
-			<form className="w-[20vw]" onSubmit={handleSubmit}>
+			<form
+				className="2xl:w-[24vw] xl:w-[28vw] lg:w-[34vw] md:w-[44vw] sm:w-[52vw] xs:w-[60vw]"
+				onSubmit={handleSubmit}
+			>
 				<div className="grid mb-6">
 					<label
 						className="mb-2 text-white text-xl tracking-wider font-serif font-semibold italic"

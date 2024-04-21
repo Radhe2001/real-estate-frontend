@@ -11,17 +11,17 @@ function Navbar({ handleShow }) {
 	}
 	return (
 		<section className="w-full h-24 flex place-content-center place-items-center bg-glass backdrop-blur-glass ">
-			<div className="w-[75vw] flex ">
+			<div className="xl:w-[75vw] lg:w-[80vw] md:w-[90vw] xs:w-[96vw] flex ">
 				<Link
 					href="#home"
-					className="mr-auto text-4xl pb-2  font-bold bg-gradient-to-br from-yellow-300 via-red-500 to-purple-600 text-transparent bg-clip-text "
+					className="mr-auto xl:text-4xl lg:text-3xl md:text-3xl sm:text-2xl xs:text-2xl pb-2  font-bold bg-gradient-to-br from-yellow-300 via-red-500 to-purple-600 text-transparent bg-clip-text "
 				>
 					Real-Estate
 				</Link>
-				<div className="flex gap-[1vw] text-2xl font-serif tracking-widest font-semibold ">
+				<div className="flex gap-[1vw] lg:text-2xl md:text-xl sm:text-lg xs:text-lg font-serif tracking-widest font-semibold ">
 					<Link
 						href="#home"
-						className={`py-2 px-2 flex place-items-center gap-1 rounded-lg bg-[#323031] hover:bg-gradient-to-br ${
+						className={`lg:py-2 lg:px-2 md:py-1 md:px-2 sm:py-[2px] sm:px-2 xs:py-[1px] xs:px-2 flex place-items-center gap-1 rounded-lg bg-[#323031] hover:bg-gradient-to-br ${
 							activeLink === 'home'
 								? 'bg-gradient-to-br'
 								: 'bg-[#323031]'
@@ -77,11 +77,11 @@ function Navbar({ handleShow }) {
 						<img
 							src="/images/favourite.png"
 							alt=""
-							className="w-[1.5vw] h-[1.5vw] m-2"
+							className="lg:w-[1.5vw] lg:h-[1.5vw] md:w-[2vw] md:h-[2vw] sm:w-[2.5vw] sm:h-[2.5vw] lg:m-2 md:my-1 md:mx-2  sm:mx-2"
 						/>
 					</button>
 					<button
-						className={`py-2 px-2 text-2xl flex place-items-center gap-1 rounded-lg bg-[#323031] hover:bg-gradient-to-br from-slate-600 via-red-500 to-cyan-600 font-serif tracking-widest text-cyan-200 font-semibold`}
+						className={`py-2 px-2 lg:text-2xl md:text-xl sm:text-lg xs:text-lg flex place-items-center gap-1 rounded-lg bg-[#323031] hover:bg-gradient-to-br from-slate-600 via-red-500 to-cyan-600 font-serif tracking-widest text-cyan-200 font-semibold`}
 						onClick={logoutClick}
 					>
 						{' '}

@@ -8,12 +8,11 @@ function page() {
 	const [wantToLogin, setWantToLogin] = useState(true);
 	return (
 		<main className="flex place-items-center w-[100vw] h-[100vh] ">
-			<section className="flex place-items-center place-content-center w-[30vw] h-[100vh] bg-[#91398b]">
+			<section className="flex place-items-center place-content-center xl:w-[30vw] lg:w-full md:w-full sm:w-full xs:w-full h-[100vh] bg-[#91398b]">
 				<div className="">
 					<div className="flex place-content-center pt-8 pb-2">
 						<div className="flex place-items-center gap-4">
-							
-							<h1 className="text-6xl text-white font-bold tracking-wide font-serif italic">
+							<h1 className="2xl:text-6xl xl:text-5xl  lg:text-5xl md:text-6xl sm:text-6xl text-white font-bold tracking-wide font-serif italic">
 								Real-Estate
 							</h1>
 						</div>
@@ -36,17 +35,14 @@ function page() {
 							></div>
 						</div>
 					</div>
-					<div className="flex place-content-center mt-20 ">
+					<div className="flex xl:place-content-center mt-20 xl:ml-0 md:ml-[5vw] sm:ml-[6vw]  xs:ml-[5vw] ">
 						{wantToLogin ? <Login /> : <Register />}
 					</div>
 				</div>
 			</section>
 			<section className="bg-[#f9aad0]">
-				<div className="w-[70vw] h-[100vh] bg-cover flex place-content-center place-items-center">
-					<img
-						className="h-full w-full"
-						src="/images/img1.jpg"
-					/>
+				<div className="w-[70vw] h-[100vh] xl:block lg:hidden md:hidden sm:hidden xs:hidden bg-cover flex place-content-center place-items-center ">
+					<img className="h-full w-full" src="/images/img1.jpg" />
 				</div>
 			</section>
 		</main>

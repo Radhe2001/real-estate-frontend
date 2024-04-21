@@ -72,7 +72,7 @@ function RestOfBody() {
 	return (
 		<main className="">
 			<div
-				className={`sticky top-0 w-full h-[100vh] ${
+				className={`fixed top-0 w-full h-[100vh] ${
 					showDetail ? '' : 'hidden'
 				}`}
 			>
@@ -125,7 +125,7 @@ function RestOfBody() {
 						</h1>
 					</div>
 					<div className="flex place-content-center">
-						<div className="w-[90vw] grid grid-cols-3 gap-[3vw] border-b-2 pb-20 border-slate-500  ">
+						<div className="w-[90vw] grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-[3vw] border-b-2 pb-20 border-slate-500  ">
 							{searchData.map((item, index) => {
 								return (
 									<div
@@ -213,7 +213,7 @@ function RestOfBody() {
 					</h1>
 				</div>
 				<div className="flex place-content-center">
-					<div className="w-[90vw] grid grid-cols-3 gap-[3vw] border-b-2 pb-20 border-slate-500  ">
+					<div className="w-[90vw] grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-[3vw] border-b-2 pb-20 border-slate-500  ">
 						{sellData.map((item, index) => {
 							return (
 								<div
@@ -296,7 +296,7 @@ function RestOfBody() {
 					</h1>
 				</div>
 				<div className="flex place-content-center">
-					<div className="w-[90vw] grid grid-cols-3 gap-[3vw] border-b-2 pb-20 border-slate-500  ">
+					<div className="w-[90vw] grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-[3vw] border-b-2 pb-20 border-slate-500  ">
 						{rentalData.map((item, index) => {
 							return (
 								<div
@@ -387,7 +387,7 @@ function RestOfBody() {
 							<div className="w-20 my-16 h-1 bg-white" />
 						</center>
 						<div className="flex place-content-center">
-							<form className="w-[50vw] mt-12">
+							<form className="lg:w-[50vw] md:w-[60vw] sm:w-[75vw] mt-12">
 								<div className="flex place-content-center gap-[4%]">
 									<input
 										type="text"
@@ -447,18 +447,18 @@ function RestOfBody() {
 								</div>
 							</form>
 						</div>
-						<div className="flex place-content-center gap-32 mt-20 ">
-							<div className="flex gap-4">
+						<div className="flex place-content-center lg:gap-32 md:gap-20 sm:gap-4 mt-20 mx-4">
+							<div className="flex lg:gap-4">
 								<img
 									src="/images/location.png"
 									alt=""
-									className="w-12 h-12"
+									className="lg:w-12 lg:h-12 md:w-10 md:h-10 sm:w-8 sm:h-8"
 								/>
 								<div className="grid">
-									<h3 className="text-xl font-semibold tracking-wider text-white font-serif italic">
+									<h3 className="lg:text-xl md:text-lg sm:text-md font-semibold tracking-wider text-white font-serif italic">
 										OUR LOCATION
 									</h3>
-									<h5 className="text-lg text-red-200">
+									<h5 className="lg:text-lg md:text-md sm:text-sm text-red-200">
 										Lajpat Nagar, New Delhi
 									</h5>
 								</div>
@@ -467,13 +467,13 @@ function RestOfBody() {
 								<img
 									src="/images/phone.png"
 									alt=""
-									className="w-12 h-12"
+									className="lg:w-12 lg:h-12 md:w-10 md:h-10 sm:w-8 sm:h-8"
 								/>
 								<div className="grid">
-									<h3 className="text-xl font-semibold tracking-wider text-white font-serif italic">
+									<h3 className="lg:text-xl md:text-lg sm:text-md font-semibold tracking-wider text-white font-serif italic">
 										OUR PHONE
 									</h3>
-									<h5 className="text-lg text-red-200">
+									<h5 className="lg:text-lg md:text-md sm:text-sm text-red-200">
 										+91 6204293537
 									</h5>
 								</div>
@@ -482,13 +482,13 @@ function RestOfBody() {
 								<img
 									src="/images/location.png"
 									alt=""
-									className="w-12 h-12"
+									className="lg:w-12 lg:h-12 md:w-10 md:h-10 sm:w-8 sm:h-8"
 								/>
 								<div className="grid">
-									<h3 className="text-xl font-semibold tracking-wider text-white font-serif italic">
+									<h3 className="lg:text-xl md:text-lg sm:text-md font-semibold tracking-wider text-white font-serif italic">
 										OUR MAIL
 									</h3>
-									<h5 className="text-lg text-red-200">
+									<h5 className="lg:text-lg md:text-md sm:text-sm text-red-200">
 										redheshyamjha469@gmail.com
 									</h5>
 								</div>

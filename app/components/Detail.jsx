@@ -11,13 +11,13 @@ function Detail({ handleShowDetail, activeItem }) {
 					x
 				</button>
 				{activeItem ? (
-					<div className="flex place-items-center gap-6 w-full h-full">
+					<div className="lg:flex md:grid sm:grid place-items-center gap-6 w-full h-full md:overflow-y-scroll sm:overflow-y-scroll overflow-x-hidden">
 						<img
 							src={`http://localhost:5000/Images/${activeItem.image}`}
 							alt=""
-							className="w-[50%] h-[100%]"
+							className="lg:w-[50%] md:w-[100%] sm:w-[100%] h-[100%]"
 						/>
-						<div className="grid ">
+						<div className="grid md:mx-4 sm:mx-4 ">
 							<h1 className="text-[#153448] text-4xl font-semibold tracking-wider font-serif mb-6">
 								{activeItem.name}
 							</h1>
